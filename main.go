@@ -1,9 +1,18 @@
 package main
 
-import "github.com/bsanzhiev/DSA-in-Go-book/searching"
+import (
+	"fmt"
+
+	"github.com/bsanzhiev/DSA-in-Go-book/missingnumber"
+)
 
 func main() {
-	data := []int{10, 25, 25, 25, 25, 25, 25, 25, 28, 52, 93, 10}
+	data := []int{2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 	// intrange := 100
-	searching.GetMajorityBrute(data)
+	missingNum, found := missingnumber.Sorting(data)
+	if found {
+		fmt.Printf("Missing number: %d\n", missingNum)
+	} else {
+		fmt.Println("No missing number")
+	}
 }
