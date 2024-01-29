@@ -1,5 +1,7 @@
 package pair
 
+// https://github.com/Hemant-Jain-Author/Data-Structures-Algorithms-In-Go/blob/master/Searching/Searching.go#L768
+
 import "fmt"
 
 func TwoListsCounting(arr1, arr2 []int, rangeVal, value int) bool {
